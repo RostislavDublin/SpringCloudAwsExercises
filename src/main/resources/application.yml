@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    default: default
+    active: default
+cloud:
+  aws:
+    credentials:
+      accessKey: AKIA27WQCUJ72CKRLCNX
+      secretKey: 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
+    region:
+      static: eu-central-1
+    stack:
+      name: myTestStack

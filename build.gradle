@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.2.2.RELEASE'
+}
+
+apply plugin: 'java'
+apply plugin: 'io.spring.dependency-management'
+
+group 'rdublin.aws'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+ext {
+    springCloudVersion = '2.2.1.RELEASE'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-aws', version: springCloudVersion
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
