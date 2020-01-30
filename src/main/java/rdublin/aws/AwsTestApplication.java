@@ -11,7 +11,6 @@ import rdublin.aws.s3.S3Upload;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Arrays;
 import java.util.Date;
 
 @SpringBootApplication
